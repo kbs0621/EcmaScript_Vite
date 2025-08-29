@@ -19,6 +19,8 @@ export const formatDate = (dateString, locale = 'ko-KR') => {
     }
 }
 
+// stringUtils.safeTrim(), const {SafeTrim, isEmpty} = strUtils
+
 // 문자열 유틸리티 (화살표 함수)
 export const stringUtils = {
     // 안전한 trim
@@ -62,7 +64,7 @@ export const arrayUtils = {
     // 중복 제거
     unique: (arr) => {
         if (!Array.isArray(arr)) return []
-        return [...new Set(arr)]
+        return [...new Set(arr)] //... : 배열을 나열 시켜주는 연산자
     },
     
     // 배열 정렬 (구조분해할당)
